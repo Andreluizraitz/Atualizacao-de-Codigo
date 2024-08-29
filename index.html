@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Cliente</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Cadastro de Cliente</h1>
+        <!--Ajuste de Colocar os inputs dentro de uma tabela -->
+        <table class="tabela" align="center">
+            <form id="registrationForm">
+                <tr>
+                    <td>
+                        <div class="form-group">
+                            <label for="name">Nome:</label>
+                            <input type="text" size="40" id="name" name="name" required>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" size="40" id="email" name="email" required>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="form-group">
+                            <label for="phone">Telefone:</label>
+                            <input type="tel" size="40" id="phone" name="phone" required>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="submit">Cadastrar</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>Comentários:</h3>
+                        <!--Criação da area de comentário -->
+                        <textarea name="coment" id="coment" rows="10" cols="50"></textarea>
+                    </td>
+                </tr>
+            </form>
+            <p id="message"></p>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
